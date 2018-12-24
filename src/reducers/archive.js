@@ -7,6 +7,7 @@ const applyArchiveStory = (state, action) => {
 }
 
 function archiveReducer(state = INITIAL_STATE, action) {
+    console.log(action)
     switch (action.type) {
         case (STORY_ARCHIVE): {
             return applyArchiveStory(state, action);
